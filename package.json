@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "parcel": "^2.6.2"
+  },
+  "dependencies": {
+    "three": "^0.142.0"
   }
 }

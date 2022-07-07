@@ -1,35 +1,26 @@
+/* CREDITS
+https://codepen.io/toperrr/pen/KKqMRjw
+*/
+
 @font-face {
     font-family: "Anurati";
     src: url(/src/frontend/assets/Anurati.otf);
 }
 
 html,
-body,
-h1 {
-  padding: 0;
+body{
+  /* padding: 10%; */
   margin: 0;
   font-family: "Anurati", sans-serif;
-}
-
-#app {
   background: #0a0a0a;
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  padding-inline: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px), url(https://media0.giphy.com/media/2shBNJSPTrpWvoXfpD/giphy.gif); */
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
 }
 
-#wrapper {
+h1 {
+  /* padding: 5vw; */
+  margin: 30vh auto;
   text-align: center;
 }
+
 
 .submsg {
   color: #64dcdc;
@@ -53,10 +44,8 @@ text set in the data-text attribute. */
 .glitch {
   position: relative;
   color: white;
-  font-size: 4em;
+  font-size: clamp(3rem, -0.875rem + 8.333vw, 5.5rem);
   letter-spacing: 0.5em;
-  /* Animation provies a slight random skew. Check bottom of doc
-  for more information on how to random skew. */
   animation: glitch-skew 1s infinite linear alternate-reverse;
 }
 .glitch::before {
@@ -301,4 +290,3 @@ skew to change the 'thickness' of the glitch.*/
   }
   
 }
-
